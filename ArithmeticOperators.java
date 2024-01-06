@@ -1,6 +1,6 @@
-//author:
-//date:
-//file:
+//author: Sara Russert 
+//date: 1/5/24
+//file: ArithmeticOperators.java
 //File to give students; code has bugs
 /*
    Lab1
@@ -35,7 +35,8 @@ public class ArithmeticOperators
       System.out.println(intNumber1 + " - " + intNumber2 + " == " + intResult);
       
       System.out.println("Multiply two ints:");
-
+      intResult = intNumber1 * intNumber2; //multiplies the ints
+      System.out.println(intNumber1 + " * " + intNumber2 + " == " + intResult);
 
       
       //implement integer division
@@ -49,14 +50,14 @@ public class ArithmeticOperators
       
       System.out.println("Divide an int by a double and store in an int:" + " ERROR!");
       //generates a narrowing conversion error message, so comment it out
-      intResult = intNumber1 / dblNumber;
+      // intResult = intNumber1 / dblNumber; 
         
       System.out.println("Divide an int by a double and store in a double:");
       dblResult = intNumber1 / dblNumber; //divide an int by a double; store in a double
       System.out.println(intNumber1 + " / " + dblNumber + " == " + dblResult);
       
       System.out.println("Add a float and a double and store in a float:" + "  ERROR!");
-      fltResult = fltNumber + dblNumber;
+      // fltResult = fltNumber + dblNumber;
       
       System.out.println("Add a float and a double and store in a double:");
       dblResult = fltNumber + dblNumber;
@@ -65,12 +66,13 @@ public class ArithmeticOperators
       System.out.println("Find remainder after dividing two ints:");
       intResult = intNumber1 % intNumber2;
       System.out.println(intNumber1 + " % " + intNumber2 + " == " + intResult);
-      
+      intResult = intNumber2 % intNumber1;
+      System.out.println(intNumber2 + " % " + intNumber1 + " == " + intResult);
       
       
       //raise an int to an int data type power and store in an int
       System.out.println("Raise an int to an int data type power and store in an int:" + " ERROR!");
-      intResult = Math.pow(intNumber2, intNumber3);
+      // intResult = Math.pow(intNumber2, intNumber3);
       
       //raise an int to an int data type power and store in a double
       System.out.println("Raise an int to an int data type power and store in a double:");
@@ -129,7 +131,8 @@ public class ArithmeticOperators
       //demonstrate char data type
       System.out.println("The char variable was initialized with: " + letter);
       //overwrite the 'A' with 'a'
-      
+      letter = 'a';
+      System.out.println("It now contains: " + letter);
              
    }
 }
